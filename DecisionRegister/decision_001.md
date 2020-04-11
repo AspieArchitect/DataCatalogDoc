@@ -15,4 +15,4 @@ These helper objects are not part of the product so by choosing to create a new 
 A product upgrade is unlikely to suffer unexpected failure caused by choosing an object name that later turns out to be part of the product.
 
 ## See Also
-* [Light Weight Deciscion Register](README.md)
+* [Light Weight Decision Register](README.md)

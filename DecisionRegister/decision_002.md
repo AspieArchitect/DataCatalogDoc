@@ -18,4 +18,4 @@ Both the column default and foreign key queries are quite convoluted.  Combining
 As there is little scope for expanding the functionality of these helper queries the choice of simplified readability is unlikely to result in obscure diagnostics in the future.
 
 ## See Also
-* [Light Weight Deciscion Register](README.md)
+* [Light Weight Decision Register](README.md)
