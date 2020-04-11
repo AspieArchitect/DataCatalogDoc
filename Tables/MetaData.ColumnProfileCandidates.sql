@@ -1,6 +1,3 @@
-USE gettingstarted
-GO
-
 DECLARE 
 	@SchemaName SYSNAME='MetaData',
 	@TableName SYSNAME = 'ColumnProfileCandidates'
