@@ -28,6 +28,7 @@ SELECT @SQLCommand=COALESCE(@SQLCommand+';'+@CRLF,'')
 + ' DROP CONSTRAINT ' 
 + name
 FROM sys.foreign_keys
+WHERE OBJECT_SCHEMA_NAME(parent_object_id)='MetaData'
 PRINT @SQLCommand
 EXEC(@SQLCommand)
 

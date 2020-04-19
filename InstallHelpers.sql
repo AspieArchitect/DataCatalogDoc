@@ -60,4 +60,6 @@ GO
 -- Data Load
 :r $(InstallationDirectory)/BaseData/InsertInto/MetaData.DataDictionary_ColumnPatterns.sql
 :r $(InstallationDirectory)/BaseData/InsertInto/MetaData.DataDictionary_ColumnDefaults.sql
+:r $(InstallationDirectory)/BaseData/InsertInto/MetaData.DataDictionary_Objects.sql
+:r $(InstallationDirectory)/BaseData/InsertInto/MetaData.DataDictionary_Columns.sql
 

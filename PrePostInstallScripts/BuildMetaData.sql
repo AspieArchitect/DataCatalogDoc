@@ -1,0 +1,2 @@
+EXEC MetaData.PopulateDataDictionary
+EXEC MetaData.HarvestExistingDescriptions
