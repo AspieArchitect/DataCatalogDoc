@@ -63,3 +63,4 @@ GO
 :r $(InstallationDirectory)/BaseData/InsertInto/MetaData.DataDictionary_Objects.sql
 :r $(InstallationDirectory)/BaseData/InsertInto/MetaData.DataDictionary_Columns.sql
 
+exec MetaData.ApplyDataDictionary
