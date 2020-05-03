@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Version="3" ApproxVals="31" Server="DADSPCJUNE2014" Database="" AuthenticationType="WindowsIntegrated">
+  <Options>
+    <Option uri="http://sqldoc/project/selections/tables/sections/statistics/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/tables/sections/spatialindexes/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/tables/sections/triggers/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/tables/sections/foreignkeys/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/tables/sections/permissions/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/tables/sections/sqlscript/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/tables/sections/indexes/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/tables/sections/properties/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[Redgate_SqlDataCatalog]/security/schemas/[MetaData]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[Redgate_SqlDataCatalog]/tables/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[Redgate_SqlDataCatalog]/views/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[Redgate_SqlDataCatalog]/programmability/storedprocedures/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[Redgate_SqlDataCatalog]/sections/dbproperties/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[Redgate_SqlDataCatalog]/sections/dboptions/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[Redgate_SqlDataCatalog]/sections/files/include/" value="False" />
+    <Option uri="http://sqldoc/project/description/" value="" />
+    <Option uri="http://sqldoc/project/outputstyle/selected/" value="Markdown" />
+    <Option uri="http://sqldoc/project/logo/" value="" />
+    <Option uri="http://sqldoc/project/toc/populate/" value="True" />
+    <Option uri="http://sqldoc/project/outputstyle/word/pagesize" value="Letter" />
+    <Option uri="http://sqldoc/project/author/" value="david.poole" />
+    <Option uri="http://sqldoc/project/footer/copyright/text/" value="Copyright 2019 - All Rights Reserved" />
+    <Option uri="http://sqldoc/project/header/text/" value="" />
+    <Option uri="http://sqldoc/project/header/breadcrumbs/include/" value="True" />
+    <Option uri="http://sqldoc/project/footer/date/format/" value="dd MMMM yyyy HH:mm:ss" />
+    <Option uri="http://sqldoc/project/outputname/addtimestamp/" value="False" />
+    <Option uri="http://sqldoc/project/outputpath/" value="C:\Users\david.poole\Documents\Visual Studio 2013\Projects\DataCatalogDoc\SQLDoc" />
+    <Option uri="http://sqldoc/project/server_alias/" value="" />
+    <Option uri="http://sqldoc/project/cover/include/" value="True" />
+    <Option uri="http://sqldoc/project/outputname/" value="DADSPCJUNE2014_documentation" />
+    <Option uri="http://sqldoc/project/name/" value="DADSPCJUNE2014 Documentation" />
+  </Options>
+</Project>

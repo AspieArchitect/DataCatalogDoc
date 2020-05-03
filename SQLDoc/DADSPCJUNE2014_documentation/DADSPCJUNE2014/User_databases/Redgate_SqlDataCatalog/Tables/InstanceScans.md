@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [DADSPCJUNE2014](../../../index.md) > [User databases](../../index.md) > [Redgate_SqlDataCatalog](../index.md) > [Tables](Tables.md) > dbo.InstanceScans
+[Project](../../../../readme.md) > [DADSPCJUNE2014](../../../readme.md) > [User databases](../../readme.md) > [Redgate_SqlDataCatalog](../readme.md) > [Tables](Tables.md) > dbo.InstanceScans
 
 # ![Tables](../../../../Images/Table32.png) [dbo].[InstanceScans]
 
@@ -35,5 +35,5 @@ A log of when the instances were scanned to detect new objects and attributes. Â
 
 ###### Copyright 2019 - All Rights Reserved
 
-###### Created: 19 April 2020 16:29:41
+###### Created: 03 May 2020 12:11:20
 

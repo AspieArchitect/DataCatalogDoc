@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [DADSPCJUNE2014](../../../index.md) > [User databases](../../index.md) > [Redgate_SqlDataCatalog](../index.md) > [Tables](Tables.md) > MetaData.DataDictionary_ColumnPatterns
+[Project](../../../../readme.md) > [DADSPCJUNE2014](../../../readme.md) > [User databases](../../readme.md) > [Redgate_SqlDataCatalog](../readme.md) > [Tables](Tables.md) > MetaData.DataDictionary_ColumnPatterns
 
 # ![Tables](../../../../Images/Table32.png) [MetaData].[DataDictionary_ColumnPatterns]
 
@@ -49,5 +49,5 @@ Provides a broad wild card specification for retrieving a group of columns.  Fo
 
 ###### Copyright 2019 - All Rights Reserved
 
-###### Created: 19 April 2020 16:29:41
+###### Created: 03 May 2020 12:11:20
 

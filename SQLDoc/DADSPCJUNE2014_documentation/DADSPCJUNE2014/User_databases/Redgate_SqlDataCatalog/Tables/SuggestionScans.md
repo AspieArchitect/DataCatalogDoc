@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [DADSPCJUNE2014](../../../index.md) > [User databases](../../index.md) > [Redgate_SqlDataCatalog](../index.md) > [Tables](Tables.md) > dbo.SuggestionScans
+[Project](../../../../readme.md) > [DADSPCJUNE2014](../../../readme.md) > [User databases](../../readme.md) > [Redgate_SqlDataCatalog](../readme.md) > [Tables](Tables.md) > dbo.SuggestionScans
 
 # ![Tables](../../../../Images/Table32.png) [dbo].[SuggestionScans]
 
@@ -26,5 +26,5 @@ Maintains a log of when suggestion scans were run.  This includes the start and
 
 ###### Copyright 2019 - All Rights Reserved
 
-###### Created: 19 April 2020 16:29:41
+###### Created: 03 May 2020 12:11:20
 

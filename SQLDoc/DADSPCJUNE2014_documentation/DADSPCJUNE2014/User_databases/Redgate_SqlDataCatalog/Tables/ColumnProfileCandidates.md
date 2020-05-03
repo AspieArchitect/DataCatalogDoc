@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [DADSPCJUNE2014](../../../index.md) > [User databases](../../index.md) > [Redgate_SqlDataCatalog](../index.md) > [Tables](Tables.md) > MetaData.ColumnProfileCandidates
+[Project](../../../../readme.md) > [DADSPCJUNE2014](../../../readme.md) > [User databases](../../readme.md) > [Redgate_SqlDataCatalog](../readme.md) > [Tables](Tables.md) > MetaData.ColumnProfileCandidates
 
 # ![Tables](../../../../Images/Table32.png) [MetaData].[ColumnProfileCandidates]
 
@@ -41,5 +41,5 @@ A list of columns within tables that are (N)CHAR or (N)VARCHAR  and between 1 a
 
 ###### Copyright 2019 - All Rights Reserved
 
-###### Created: 19 April 2020 16:29:41
+###### Created: 03 May 2020 12:11:20
 

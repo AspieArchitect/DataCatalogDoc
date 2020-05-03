@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [DADSPCJUNE2014](../../../index.md) > [User databases](../../index.md) > [Redgate_SqlDataCatalog](../index.md) > [Views](Views.md) > MetaData.DefaultColumnAndFKDescriptions
+[Project](../../../../readme.md) > [DADSPCJUNE2014](../../../readme.md) > [User databases](../../readme.md) > [Redgate_SqlDataCatalog](../readme.md) > [Views](Views.md) > MetaData.DefaultColumnAndFKDescriptions
 
 # ![Views](../../../../Images/View32.png) [MetaData].[DefaultColumnAndFKDescriptions]
 
@@ -98,5 +98,5 @@ GO
 
 ###### Copyright 2019 - All Rights Reserved
 
-###### Created: 19 April 2020 16:29:41
+###### Created: 03 May 2020 12:11:20
 
