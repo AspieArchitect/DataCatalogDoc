@@ -1,12 +1,12 @@
-cls
-cd "C:\Users\david.poole\Documents\Visual Studio 2013\Projects\DataCatalogDoc\SQLDoc\DADSPCJUNE2014_documentation\DADSPCJUNE2014\User_databases\Redgate_SqlDataCatalog\Tables\"
 
-
-$fileContent = Get-Content .\AssetTypes.md 
+[cmdletbinding()]
+param([string]$inputFileName)
+$fileContent = Get-Content $inputFileName
 $fileContentLines=$fileContent.Split([Environment]::NewLine)
 $tableColumnCount=0
 $currentColumnCount=0
 $concatenatedHTMLList=""
+Clear-Host
 
 ForEach ($line in $fileContentLines){
 
@@ -24,12 +24,15 @@ ForEach ($line in $fileContentLines){
         Write-Output $line
     }
     else{
-        $currentColumnCount=($line.Split("|")).count
+        $lineArray=$line.Split("|")
+        $currentColumnCount=($lineArray).count
         if($line.StartsWith("*")){
-            $lastItem=$line.Split("|")[0]
+            $lastItem=$lineArray[0]
             }
         else{
-            $lastItem=$line.Split("|")[$currentColumnCount - 1]
+            $lastItem=$lineArray[$currentColumnCount - 1]
+            $lineStart=$lineArray[0..($lineArray.Length -2)] -join ""
+            
         }
         if($currentColumnCount -eq $tableColumnCount){
             Write-Output $line
@@ -47,6 +50,7 @@ ForEach ($line in $fileContentLines){
                 $concatenatedHTMLList+=$line
             }
             if($concatenatedHTMLList.EndsWith("</li></ul>|")){
+                $concatenatedHTMLList = $lineStart + $concatenatedHTMLList
                 Write-Output $concatenatedHTMLList
             }
                 
