@@ -5,8 +5,8 @@ $fileContent = Get-Content $inputFileName
 $fileContentLines=$fileContent.Split([Environment]::NewLine)
 $tableColumnCount=0
 $currentColumnCount=0
-$concatenatedHTMLList=""
-$listOpened = $True
+$concatenatedHTMLContent=""
+$listOpened = $false
 #Clear-Host
 
 ForEach ($line in $fileContentLines){
@@ -22,7 +22,7 @@ ForEach ($line in $fileContentLines){
     if(($line.Length -eq 0) -and ($tableColumnCount -gt 0)){
         $tableColumnCount=0
         $currentColumnCount=0
-        $concatenatedHTMLList=""
+        $concatenatedHTMLContent=""
     }
 
     if($tableColumnCount -gt 0){
@@ -36,22 +36,45 @@ ForEach ($line in $fileContentLines){
         continue
     }
 
-        
-    if($line.Trim().StartsWith("*")){
-        $lastItem=$lineArray[0]
-        $newItem="{0}</li>" -f $lastItem.Replace("* ","<li>")
-        if ($line.EndsWith("|")){
-            $concatenatedHTMLList += "{0}</ul>|" -f $newItem.Replace("_ </li>","</li>")
-            Write-output $concatenatedHTMLList
-        } else{
-            $concatenatedHTMLList +=  $newItem
-        }
-
-    }
-    else{
-        $lastItem=$lineArray[$currentColumnCount - 1]
+    # Anything beyond this point must be in an open table
+    if($tableColumnCount -eq $currentColumnCount +1){
         $lineStart=$lineArray[0..($lineArray.Length -2)] -join "|"
-        $concatenatedHTMLList="{0}{1}</li>" -f $linestart,$lastItem.Replace("_* ","|<ul><li>")
-
     }
+
+    if($line.Trim().EndsWith("|")){
+        $lastItem=$lineArray[-2].Trim()
+    }else{
+        $lastItem=$lineArray[-1].Trim()
+    }
+
+    # Allow for detecting list starts
+    if (($lastItem.StartsWith("*")) -or ($lastItem.StartsWith("_*"))){
+        if ($listOpened -eq $false){
+            $listOpened = $True
+            $concatenatedHTMLContent+= "{0}</li>" -f $lastItem.Replace("_*","_<ul><li>").Replace("*","<ul><li>")
+        }else{
+            $concatenatedHTMLContent+= "<li>{0}</li>" -f $lastItem.TrimStart("*")
+        }
+    }else{
+        # Test that isn't in a list
+        if($lastItem.Length -gt 0){
+            if($listOpened -eq $True){
+                $listOpened = $false
+                $concatenatedHTMLContent +="</ul>"
+            }
+            $concatenatedHTMLContent+="<p>{0}</p>" -f $lastItem
+        }
+    }
+
+    if($line.EndsWith("|")){
+        if($listOpened -eq $True){
+            $listOpened = $false
+            $concatenatedHTMLContent+="</ul>|"
+        }else{
+            $concatenatedHTMLContent+="|"
+        }
+        Write-output ("{0}|{1}" -f $lineStart,$concatenatedHTMLContent)
+        $concatenatedHTMLContent=""
+    }
+
 }

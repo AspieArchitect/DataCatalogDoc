@@ -1,0 +1,1 @@
+/SQLDoc/DADSPCJUNE2014_documentation/DADSPCJUNE2014/User_databases/Redgate_SqlDataCatalog/Tables/InstanceAttributes.md >a_output.md
