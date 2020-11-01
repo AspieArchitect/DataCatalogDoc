@@ -7,7 +7,6 @@ $tableColumnCount=0
 $currentColumnCount=0
 $concatenatedHTMLContent=""
 $listOpened = $false
-#Clear-Host
 
 ForEach ($line in $fileContentLines){
 

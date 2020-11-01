@@ -10,4 +10,4 @@ $base_path = Split-Path -Parent $PSCommandPath
 $documentation_path = "$base_path\SQLDoc\DADSPCJUNE2014_documentation"
 
 & ".\ScriptHelpers\index_to_readme.ps1" "$documentation_path"
-
+& ".\ScriptHelpers\md_to_html_link.ps1" "$documentation_path"
