@@ -24,7 +24,7 @@
 | Edition | Developer Edition (64-bit) |
 | Engine Edition | 3 (Enterprise) |
 | Processors | 8 |
-| OS Version | 6.3 (18362) |
+| OS Version | 6.3 (19041) |
 | Physical Memory | 8143 |
 | Is Clustered | False |
 | Root Directory | c:\\Program Files\\Microsoft SQL Server\\MSSQL12.MSSQLSERVER\\MSSQL |
@@ -81,5 +81,5 @@
 
 ###### Copyright 2019 - All Rights Reserved
 
-###### Created: 03 May 2020 12:11:20
+###### Created: 29 November 2020 18:21:54
 

@@ -31,7 +31,7 @@
 | Database Encryption Enabled | NO |
 | Database Encryption Algorithm | None |
 | Database size | 9.23 MB |
-| Unallocated space | 0.99 MB |
+| Unallocated space | 0.68 MB |
 
 
 ---
@@ -111,5 +111,5 @@
 
 ###### Copyright 2019 - All Rights Reserved
 
-###### Created: 03 May 2020 12:11:20
+###### Created: 29 November 2020 18:21:54
 

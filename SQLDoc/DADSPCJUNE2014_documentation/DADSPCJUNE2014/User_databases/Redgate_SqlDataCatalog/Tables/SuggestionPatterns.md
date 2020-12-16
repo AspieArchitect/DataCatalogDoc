@@ -51,5 +51,5 @@ A list of TSQL LIKE patterns that will be used against column names in order to 
 
 ###### Copyright 2019 - All Rights Reserved
 
-###### Created: 10 May 2020 16:47:57
+###### Created: 29 November 2020 18:21:54
 
