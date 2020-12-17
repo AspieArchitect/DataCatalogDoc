@@ -16,14 +16,11 @@ For column classifications the table and column name will be captured as well as
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_AuditLog: Id](../../../../Images/pkcluster.png)](#indexes) | Id | bigint | 8 | NOT NULL |  | _The clustered primary key that uniquely identifies the dbo.AuditLog record._ |
-|  | AuditEventType | nvarchar(1024) | 2048 | NOT NULL |  | _A short name for the type of event that is audited.  Examples may include the following.
-* ColumnClassificationChanged* InstanceScanRequested* TagCategoryCreation* TagCategoryDeletion* TagCreation_ |
+|  | AuditEventType | nvarchar(1024) | 2048 | NOT NULL |  |<p>_A short name for the type of event that is audited.  Examples may include the following.</p><ul><li> ColumnClassificationChanged<ul><li> InstanceScanRequested<ul><li> TagCategoryCreation<ul><li> TagCategoryDeletion<ul><li> TagCreation_</li></ul>|
 |  | UserName | nvarchar(max) | max | NULL allowed |  | _The login username that caused the event being audited_ |
 |  | TimeStamp | datetime2 | 8 | NOT NULL |  | _The date/time at which the auditable event took place_ |
 |  | Name | nvarchar(max) | max | NULL allowed |  | _Where some form of Tag or TagCategory event occurs this is the name of that Tag or TagCategory_ |
-|  | InstanceName | nvarchar(max) | max | NULL allowed |  | _The database instance name.  Bear in mind that this may be the name of a server, cluster or availability group listener.  This will be NULL for tag maintenance activity.  It applies to two types of event.
-* ColumnClassificationChanged
-* InstanceScanRequested_ |
+|  | InstanceName | nvarchar(max) | max | NULL allowed |  |<p>_The database instance name.  Bear in mind that this may be the name of a server, cluster or availability group listener.  This will be NULL for tag maintenance activity.  It applies to two types of event.</p><ul><li> ColumnClassificationChanged</li><li> InstanceScanRequested_</li></ul>|
 |  | DatabaseName | nvarchar(max) | max | NULL allowed |  | _The name of the database within the server instance. This is used for ColumnClassificationChanged events._ |
 |  | SchemaName | nvarchar(max) | max | NULL allowed |  | _The name of the schema. This is used for ColumnClassificationChanged events._ |
 |  | TableName | nvarchar(max) | max | NULL allowed |  | _The table name. This is used for ColumnClassificationChanged events._ |

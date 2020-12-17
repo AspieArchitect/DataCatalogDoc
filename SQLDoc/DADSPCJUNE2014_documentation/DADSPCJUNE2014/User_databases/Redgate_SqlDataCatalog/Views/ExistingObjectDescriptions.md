@@ -28,8 +28,7 @@ The contents of any existing MS_DESCRIPTION properties for table and views.  Th
 |---|---|---|---|---|
 | SchemaName | nvarchar(128) | Latin1_General_CI_AS | 256 | _The name of the schema in which the table or view containing the column resides._ |
 | ObjectName | [sys].[sysname] | Latin1_General_CI_AS | 256 | _The name of the table or view_ |
-| ObjectType | nvarchar(4000) | Latin1_General_CI_AS_KS_WS | 8000 | _* TABLE
-* VIEW_ |
+| ObjectType | nvarchar(4000) | Latin1_General_CI_AS_KS_WS | 8000 |_<ul><li> TABLE</li><li> VIEW_</li></ul>|
 | ObjectDescription | varchar(max) | Latin1_General_CI_AS | max | _The contents of the MS_DESCRIPTION property for the table or view._ |
 
 

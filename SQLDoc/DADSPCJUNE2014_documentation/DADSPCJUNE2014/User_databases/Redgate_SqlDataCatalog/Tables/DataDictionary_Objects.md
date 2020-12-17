@@ -16,8 +16,7 @@ Holds descriptions for tables and views.  This is to provide a means of allowin
 |---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_DataDictionary_Objects: SchemaName\ObjectName](../../../../Images/pkcluster.png)](#indexes) | SchemaName | [sys].[sysname] | 256 | NOT NULL |  | _The schema name in which the object resides_ |
 | [![Cluster Primary Key PK_DataDictionary_Objects: SchemaName\ObjectName](../../../../Images/pkcluster.png)](#indexes) | ObjectName | [sys].[sysname] | 256 | NOT NULL |  | _The object name where the object is a table or view_ |
-|  | ObjectType | varchar(50) | 50 | NOT NULL |  | _* TABLE
-		* VIEW_ |
+|  | ObjectType | varchar(50) | 50 | NOT NULL |  |_<ul><li> TABLE</li><li> VIEW_</li></ul>|
 |  | ObjectDescription | varchar(7000) | 7000 | NOT NULL | ('') | _User friendly text describing the use and any relevant detail about the table or view_ |
 
 

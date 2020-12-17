@@ -2,7 +2,7 @@
 
 The purpose of this repository is to record the eventual code used to build two www.sqlservercentral.com articles
  1. [Oiling the gears for the data dictionary](https://www.sqlservercentral.com/articles/oiling-the-gears-for-the-data-dictionary) published in April 2014
- 1. [Re-oiling the gears fo the data dictionary](https://www.sqlservercentral.com/articles/re-oiling-the-gears-for-the-data-dictionary-or-catalog) published in January 2020
+ 1. [Re-oiling the gears for the data dictionary](https://www.sqlservercentral.com/articles/re-oiling-the-gears-for-the-data-dictionary-or-catalog) published in January 2020
 
  Please review the [Light Weight Decision Register](DecisionRegister/README.md)
 

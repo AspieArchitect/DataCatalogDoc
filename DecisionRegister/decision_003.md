@@ -1,4 +1,4 @@
-# DECISION 003 - Not using the data dictionary helpers for EDWMetaData
+# DECISION 003 - Not using the data dictionary helpers for MetaData
 
 ## WHEN 
 11- April-2020

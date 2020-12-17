@@ -33,10 +33,7 @@ Provides a column description based on the concatenation of three properties
 | SchemaName | nvarchar(128) | 256 | _The name of the schema in which the table containing the column resides_ |
 | ObjectName | nvarchar(128) | 256 | _The name of the table containing the column_ |
 | ColumnName | [sys].[sysname] | 256 | _The column name for which a full description is generated_ |
-| ColumnDescription | nvarchar(max) | max | _The concatenation of three properties
-* Default column description
-* Foreign key join
-* TABLE_SUMMARY property from the referenced object._ |
+| ColumnDescription | nvarchar(max) | max |<p>_The concatenation of three properties</p><ul><li> Default column description</li><li> Foreign key join</li><li> TABLE_SUMMARY property from the referenced object._</li></ul>|
 
 
 ---

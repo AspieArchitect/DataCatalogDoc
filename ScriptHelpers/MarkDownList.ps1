@@ -40,6 +40,9 @@ ForEach ($line in $fileContentLines){
         $lineStart=$lineArray[0..($lineArray.Length -2)] -join "|"
     }
 
+    # As the line is split on the "|" the description line
+    # 1.  For a table closing line will be the last but one cell
+    # 2.  for a non-table closing line will be the last cell.
     if($line.Trim().EndsWith("|")){
         $lastItem=$lineArray[-2].Trim()
     }else{

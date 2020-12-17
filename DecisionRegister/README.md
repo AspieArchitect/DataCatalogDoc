@@ -15,4 +15,5 @@ It is easy to criticise decisions with the benefit of hindsight.  By recording t
 |----------------|:--------------------|
 |[Decision_001](decision_001.md)|Creation and use of the MetaData schema|
 |[Decision_002](decision_002.md)|Use of views on views|
-|[Decision_003](decision_003.md)|Not using the data dictionary helpers for EDWMetaData|
+|[Decision_003](decision_003.md)|Not using the data dictionary helpers for MetaData|
+|[Decision_004](decision_004.md)|DECISION 004 - HTML and Markdown enhancements over the standard SQLDoc output|

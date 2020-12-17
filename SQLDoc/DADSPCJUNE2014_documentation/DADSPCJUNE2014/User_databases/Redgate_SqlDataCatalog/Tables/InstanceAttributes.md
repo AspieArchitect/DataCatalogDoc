@@ -15,10 +15,8 @@ Entity-Attribute-Value representation of properties relevant to the instance/ser
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
 |---|---|---|---|---|---|
 | [![Cluster Primary Key PK_InstanceAttributes: InstanceId\Key](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_InstanceAttributes_Instances_InstanceId: [dbo].[Instances].InstanceId](../../../../Images/fk.png)](#foreignkeys) | InstanceId | bigint | 8 | NOT NULL | _Join to Id column in the dbo.Instances table._ |
-| [![Cluster Primary Key PK_InstanceAttributes: InstanceId\Key](../../../../Images/pkcluster.png)](#indexes) | Key | nvarchar(400) | 800 | NOT NULL | _The name of the property attached to the server/instance
-* Edition_ |
-|  | Value | nvarchar(max) | max | NOT NULL | _The value of the property attached to the server/instance
-* Developer Edition (64 bit)_ |
+| [![Cluster Primary Key PK_InstanceAttributes: InstanceId\Key](../../../../Images/pkcluster.png)](#indexes) | Key | nvarchar(400) | 800 | NOT NULL |<p>_The name of the property attached to the server/instance</p><ul><li> Edition_</li></ul>|
+|  | Value | nvarchar(max) | max | NOT NULL |<p>_The value of the property attached to the server/instance</p><ul><li> Developer Edition (64 bit)_</li></ul>|
 
 
 ---

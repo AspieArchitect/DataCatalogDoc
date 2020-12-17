@@ -17,10 +17,7 @@ When Data Catalog permissions are turned on this is the association between a lo
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-|  | AccessLevel | bigint | 8 | NOT NULL |  | _Number indicating the access level assigned to the SID.
-1. Administrator
-2. Read-Only
-3. Classify Only_ |
+|  | AccessLevel | bigint | 8 | NOT NULL |  |<p>_Number indicating the access level assigned to the SID.</p><p>1. Administrator</p><p>2. Read-Only</p><p>3. Classify Only_</p>|
 | [![Cluster Primary Key PK_AccessGroups: Sid](../../../../Images/pkcluster.png)](#indexes) | Sid | nvarchar(400) | 800 | NOT NULL |  | _The clustered primary key that uniquely identifies the dbo.AccessGroups record._ |
 |  | DisplayName | nvarchar(max) | max | NOT NULL | (N'') | _The user name of the SID_ |
 

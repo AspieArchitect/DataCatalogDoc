@@ -16,8 +16,7 @@ Holds descriptions for columns within the tables or views.  This is to provide 
 |---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_DataDictionary_Columns: SchemaName\ObjectName\ColumnName](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_DataDictionary_Columns: [MetaData].[DataDictionary_Objects].SchemaName\ObjectName](../../../../Images/fk.png)](#foreignkeys) | SchemaName | [sys].[sysname] | 256 | NOT NULL |  | _The schema name in which the object containing the column resides_ |
 | [![Cluster Primary Key PK_DataDictionary_Columns: SchemaName\ObjectName\ColumnName](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_DataDictionary_Columns: [MetaData].[DataDictionary_Objects].SchemaName\ObjectName](../../../../Images/fk.png)](#foreignkeys) | ObjectName | [sys].[sysname] | 256 | NOT NULL |  | _The name of the table or view_ |
-|  | ObjectType | varchar(50) | 50 | NOT NULL |  | _* TABLE
-		* VIEW_ |
+|  | ObjectType | varchar(50) | 50 | NOT NULL |  |_<ul><li> TABLE</li><li> VIEW_</li></ul>|
 | [![Cluster Primary Key PK_DataDictionary_Columns: SchemaName\ObjectName\ColumnName](../../../../Images/pkcluster.png)](#indexes) | ColumnName | [sys].[sysname] | 256 | NOT NULL |  | _The name of the column within the table or view_ |
 |  | ColumnDescription | varchar(7000) | 7000 | NOT NULL | ('') | _User friendly text describing the use and any relevant detail about the column within the table or view_ |
 

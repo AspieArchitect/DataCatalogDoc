@@ -20,11 +20,7 @@ Describes the type of object within the data catalog that can be categorized
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
 |---|---|---|---|---|---|
 | [![Cluster Primary Key PK_AssetTypes: Id](../../../../Images/pkcluster.png)](#indexes) | Id | bigint | 8 | NOT NULL | _The clustered primary key that uniquely identifies the dbo.AssetTypes record._ |
-| [![Indexes IX_AssetTypes_Name](../../../../Images/Index.png)](#indexes) | Name | nvarchar(50) | 100 | NOT NULL | _* SQL Server Instance
-* Database
-* Schema
-* Table
-* Column_ |
+| [![Indexes IX_AssetTypes_Name](../../../../Images/Index.png)](#indexes) | Name | nvarchar(50) | 100 | NOT NULL |_<ul><li> SQL Server Instance</li><li> Database</li><li> Schema</li><li> Table</li><li> Column_</li></ul>|
 |  | Description | nvarchar(200) | 400 | NOT NULL | _Describes each Data Catalog asset type in terms that are useful to a person who is data savvy, but not necessarily and IT person._ |
 
 

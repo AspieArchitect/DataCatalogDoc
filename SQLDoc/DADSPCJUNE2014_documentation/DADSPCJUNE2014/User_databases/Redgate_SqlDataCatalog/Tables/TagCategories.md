@@ -15,8 +15,7 @@ A tag category is a grouping entity to which a number of tags can be associated.
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_TagCategories: Id](../../../../Images/pkcluster.png)](#indexes) | Id | bigint | 8 | NOT NULL |  | _The surrogate and primary key_ |
-| [![Indexes IX_TagCategories_Name](../../../../Images/Index.png)](#indexes) | Name | nvarchar(100) | 200 | NOT NULL |  | _Simple label for the category.  Examples of which might be as follows.
-* Applicable Regulation* Classification Scope* Environment* HIPAA Identifier* Information Type* Owner* Primary Jurisdiction* Retention Policy* Sensitivity* Treatment Intent_ |
+| [![Indexes IX_TagCategories_Name](../../../../Images/Index.png)](#indexes) | Name | nvarchar(100) | 200 | NOT NULL |  |<p>_Simple label for the category.  Examples of which might be as follows.</p><ul><li> Applicable Regulation<ul><li> Classification Scope<ul><li> Environment<ul><li> HIPAA Identifier<ul><li> Information Type<ul><li> Owner<ul><li> Primary Jurisdiction<ul><li> Retention Policy<ul><li> Sensitivity<ul><li> Treatment Intent_</li></ul>|
 |  | CreatedAtUtc | datetime2 | 8 | NOT NULL |  | _The timestamp for when a record was created as a result of activity through the user interface_ |
 |  | Description | nvarchar(2000) | 4000 | NULL allowed |  | _Detailed description of the category_ |
 |  | IsMultiValued | bit | 1 | NOT NULL | ((0)) | _When TRUE any combination of tags within the category may be attached to an attribute_ |

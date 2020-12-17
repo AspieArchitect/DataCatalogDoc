@@ -28,8 +28,7 @@ Provides default descriptions for columns based on a broad column retrieval patt
 |---|---|---|---|---|
 | SchemaName | nvarchar(128) | Latin1_General_CI_AS | 256 | _The name of the schema in which the table or view containing the column resides_ |
 | ObjectName | [sys].[sysname] | Latin1_General_CI_AS | 256 | _The name of the table or view_ |
-| ObjectType | nvarchar(4000) | Latin1_General_CI_AS_KS_WS | 8000 | _* TABLE
-* VIEW_ |
+| ObjectType | nvarchar(4000) | Latin1_General_CI_AS_KS_WS | 8000 |_<ul><li> TABLE</li><li> VIEW_</li></ul>|
 | ColumnName | [sys].[sysname] | Latin1_General_CI_AS | 256 | _The name of the column for which a description will be provided_ |
 | ColumnDescription | nvarchar(4000) | Latin1_General_CI_AS | 8000 | _The user friendly description for the column_ |
 

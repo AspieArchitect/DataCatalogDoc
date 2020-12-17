@@ -5,7 +5,7 @@
 ## WHAT?
 Under normal circumstances using views on views would be strongly discouraged.
 
-Views on views create diagnoistic nightmares and inadvertent duplication of joins and datasets
+Views on views create diagnostic nightmares and inadvertent duplication of joins and datasets
 
 In this case the choice to use views on views is a concious one.
 

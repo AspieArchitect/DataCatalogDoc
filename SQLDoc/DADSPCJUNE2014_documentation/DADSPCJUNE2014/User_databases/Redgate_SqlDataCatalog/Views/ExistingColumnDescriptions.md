@@ -28,8 +28,7 @@ The contents of any existing MS_DESCRIPTION properties for column in the table o
 |---|---|---|---|---|
 | SchemaName | nvarchar(128) | Latin1_General_CI_AS | 256 | _The name of the schema in which the table or view containing the column resides_ |
 | ObjectName | [sys].[sysname] | Latin1_General_CI_AS | 256 | _The table or view name in which the column resides_ |
-| ObjectType | nvarchar(4000) | Latin1_General_CI_AS_KS_WS | 8000 | _* TABLE
-* VIEW_ |
+| ObjectType | nvarchar(4000) | Latin1_General_CI_AS_KS_WS | 8000 |_<ul><li> TABLE</li><li> VIEW_</li></ul>|
 | ColumnName | [sys].[sysname] | Latin1_General_CI_AS | 256 | _The name of the column for which the value of the MS_DESCRIPTION will be scavenged_ |
 | ColumnDescription | varchar(max) | Latin1_General_CI_AS | max | _The value of the MS_DESCRIPTION property for the column._ |
 

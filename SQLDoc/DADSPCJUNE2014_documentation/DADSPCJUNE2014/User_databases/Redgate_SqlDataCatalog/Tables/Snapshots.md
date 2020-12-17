@@ -15,9 +15,7 @@ Snapshots of the estate are taken weekly on a Sunday.
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_Snapshots: Id](../../../../Images/pkcluster.png)](#indexes) | Id | bigint | 8 | NOT NULL |  | _The clustered primary key that uniquely identifies the dbo.Snapshots record._ |
-|  | Discriminator | nvarchar(max) | max | NOT NULL |  | _The name of the type of snapshot being performed.
-* EstateSnapshotEfEntity
-* InstanceSnapshotEfEntity_ |
+|  | Discriminator | nvarchar(max) | max | NOT NULL |  |<p>_The name of the type of snapshot being performed.</p><ul><li> EstateSnapshotEfEntity</li><li> InstanceSnapshotEfEntity_</li></ul>|
 |  | InstanceId | bigint | 8 | NULL allowed |  | _Join to dbo.Intances that identifies the SQL Server Instance or Availability Group Listener to which the InstanceSnapshotEfEntity snapshot refers._ |
 |  | InstanceName | nvarchar(max) | max | NULL allowed |  | _The name of the SQL Server Instance or Availability Group Listener at the time the InstanceSnapshotEfEntity snapshot occurred._ |
 | [![Indexes IX_Snapshots_SnapshotDataSha256Hash](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Snapshots_SnapshotData_SnapshotDataSha256Hash: [dbo].[SnapshotData].SnapshotDataSha256Hash](../../../../Images/fk.png)](#foreignkeys) | SnapshotDataSha256Hash | nvarchar(48) | 96 | NULL allowed |  | _Join to Sha256Hash column in the dbo.SnapshotData table._ |

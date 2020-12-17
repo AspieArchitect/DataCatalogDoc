@@ -27,7 +27,11 @@ INSERT INTO [MetaData].[DataDictionary_Columns] ([SchemaName], [ObjectName], [Co
 * Table
 * Column')
 INSERT INTO [MetaData].[DataDictionary_Columns] ([SchemaName], [ObjectName], [ColumnName], [ObjectType], [ColumnDescription]) VALUES (N'dbo', N'AuditLog', N'AuditEventType', 'TABLE', 'A short name for the type of event that is audited.  Examples may include the following.
-* ColumnClassificationChanged* InstanceScanRequested* TagCategoryCreation* TagCategoryDeletion* TagCreation')
+* ColumnClassificationChanged
+* InstanceScanRequested
+* TagCategoryCreation
+* TagCategoryDeletion
+* TagCreation')
 INSERT INTO [MetaData].[DataDictionary_Columns] ([SchemaName], [ObjectName], [ColumnName], [ObjectType], [ColumnDescription]) VALUES (N'dbo', N'AuditLog', N'ColumnName', 'TABLE', 'The column name. This is used for ColumnClassificationChanged events.')
 INSERT INTO [MetaData].[DataDictionary_Columns] ([SchemaName], [ObjectName], [ColumnName], [ObjectType], [ColumnDescription]) VALUES (N'dbo', N'AuditLog', N'Data', 'TABLE', 'A JSON payload describing the actual change for the ColumnClassificationChanged events.')
 INSERT INTO [MetaData].[DataDictionary_Columns] ([SchemaName], [ObjectName], [ColumnName], [ObjectType], [ColumnDescription]) VALUES (N'dbo', N'AuditLog', N'DatabaseName', 'TABLE', 'The name of the database within the server instance. This is used for ColumnClassificationChanged events.')

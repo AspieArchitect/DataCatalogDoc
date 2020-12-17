@@ -17,8 +17,7 @@ Holds the column descriptions assembled from the distinct values within the colu
 | [![Cluster Primary Key PK_DataDictionary_StagingColumns: SchemaName\ObjectName\ColumnName](../../../../Images/pkcluster.png)](#indexes) | SchemaName | [sys].[sysname] | 256 | NOT NULL | _The schema name in which the object containing the column resides_ |
 | [![Cluster Primary Key PK_DataDictionary_StagingColumns: SchemaName\ObjectName\ColumnName](../../../../Images/pkcluster.png)](#indexes) | ObjectName | [sys].[sysname] | 256 | NOT NULL | _The table name in which the column resides_ |
 | [![Cluster Primary Key PK_DataDictionary_StagingColumns: SchemaName\ObjectName\ColumnName](../../../../Images/pkcluster.png)](#indexes) | ColumnName | [sys].[sysname] | 256 | NOT NULL | _The column name for which a description has been assembled_ |
-|  | ColumnDescription | varchar(7000) | 7000 | NOT NULL | _The assembled description that is a list of DISTINCT values from the column.
-		WARNING: There is no guarantee as to the order of this list._ |
+|  | ColumnDescription | varchar(7000) | 7000 | NOT NULL |<p>_The assembled description that is a list of DISTINCT values from the column.</p><p>WARNING: There is no guarantee as to the order of this list._</p>|
 
 
 ---

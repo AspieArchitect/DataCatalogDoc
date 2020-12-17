@@ -16,19 +16,7 @@ A list of TSQL LIKE patterns that will be used against column names in order to 
 |---|---|---|---|---|---|
 | [![Cluster Primary Key PK_SuggestionPatterns: Id](../../../../Images/pkcluster.png)](#indexes) | Id | bigint | 8 | NOT NULL | _The clustered primary key that uniquely identifies the dbo.SuggestionPatterns record._ |
 |  | Pattern | nvarchar(max) | max | NULL allowed | _The LIKE pattern that will be applied to associate column names with a likely rule._ |
-| [![Indexes IX_SuggestionPatterns_RuleId](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_SuggestionPatterns_SuggestionRules_RuleId: [dbo].[SuggestionRules].RuleId](../../../../Images/fk.png)](#foreignkeys) | RuleId | bigint | 8 | NULL allowed | _Join to Id column in the dbo.SuggestionRules table.
-1. Networking
-2. Contact Info
-3. Credentials
-4. Credit Cards
-5. Banking
-6. Financial
-7. Other
-8. Names
-9. National ID
-10. Social Security
-11. Health
-12. Dates of Birth_ |
+| [![Indexes IX_SuggestionPatterns_RuleId](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_SuggestionPatterns_SuggestionRules_RuleId: [dbo].[SuggestionRules].RuleId](../../../../Images/fk.png)](#foreignkeys) | RuleId | bigint | 8 | NULL allowed |<p>_Join to Id column in the dbo.SuggestionRules table.</p><p>1. Networking</p><p>2. Contact Info</p><p>3. Credentials</p><p>4. Credit Cards</p><p>5. Banking</p><p>6. Financial</p><p>7. Other</p><p>8. Names</p><p>9. National ID</p><p>10. Social Security</p><p>11. Health</p><p>12. Dates of Birth_</p>|
 
 
 ---
