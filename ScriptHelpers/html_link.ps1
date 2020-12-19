@@ -4,7 +4,7 @@
 param([string]$inputFileName)
 
 $fileContent = Get-Content $inputFileName
-$md_markdown_pattern='((?:\[)[\w+\s*]+(?:\]))\(([a-zA-Z0-9:\/_\.-]+)(\s)?(\"[\w\s]*\")?\)'
+$md_markdown_pattern='((?:\[)[\w+\s*]+(?:\]))\(([a-zA-Z0-9:\/_\.\?=-]+)(\s)?(\"[\w\s]*\")?\)'
 
 $results=$fileContent|Select-String -Pattern $md_markdown_pattern -AllMatches
 

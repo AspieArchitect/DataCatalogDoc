@@ -54,13 +54,24 @@ INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [Ob
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'Snapshots', 'TABLE', 'Snapshots of the estate are taken weekly on a Sunday.')
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'SuggestionPatterns', 'TABLE', 'A list of TSQL LIKE patterns that will be used against column names in order to associate the column with a rule')
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'SuggestionRules', 'TABLE', 'A list of rules aligned to the "Information Type" label introduced in SQL Server 2016
-1. Networking2. Contact Info3. Credentials4. Credit Cards5. Banking6. Financial7. Other8. Names9. National ID10. Social Security11. Health12. Dates of Birth')
+1. Networking
+2. Contact Info
+3. Credentials
+4. Credit Cards
+5. Banking
+6. Financial
+7. Other
+8. Names
+9. National ID
+10. Social Security
+11. Health
+12. Dates of Birth')
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'SuggestionRuleTags', 'TABLE', 'Describes the mapping between a Suggestion Rule (being a category within information type) and a tag within the information type and sensitivity classification tags.')
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'Suggestions', 'TABLE', 'Identifies the rule and pattern associated with a column.')
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'SuggestionScans', 'TABLE', 'Maintains a log of when suggestion scans were run.  This includes the start and finish time stamps so the duration of the scan can be determined.')
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'sysdiagrams', 'TABLE', '')
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'Tables', 'TABLE', 'A list of tables detected within each schema as held within dbo.Schemas')
-INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'TagCategories', 'TABLE', 'Holds a list of categories by which data attributes can be classified')
+INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'TagCategories', 'TABLE', 'A tag category is a grouping entity to which a number of tags can be associated.See [Open taxonomy](https://documentation.red-gate.com/sql-data-catalog/taxonomy/open-taxonomy "SQL Data Catalog taxonomy documentation")')
 INSERT INTO [MetaData].[DataDictionary_Objects] ([SchemaName], [ObjectName], [ObjectType], [ObjectDescription]) VALUES (N'dbo', N'TagCategoryAssetTypeApplications', 'TABLE', 'Allows a category as held in dbo.TagCategories to be mapped to an asset type as held in dbo.AssetTypes.  The asset types are as follows.
 * SQL Server Instance
 * Database

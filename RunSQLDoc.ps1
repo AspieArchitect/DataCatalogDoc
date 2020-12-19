@@ -14,3 +14,4 @@ sqldoc /server:DADSPCJUNE2014 /database:Redgate_SqlDataCatalog  /project:Redgate
 & ".\ScriptHelpers\index_to_readme.ps1" "$documentation_path"
 & ".\ScriptHelpers\md_to_html_link.ps1" "$documentation_path"
 & ".\ScriptHelpers\md_to_bullet_list.ps1" "$documentation_path"
+& ".\ScriptHelpers\object_to_readme.ps1" "$documentation_path"
