@@ -21,4 +21,4 @@ sqldoc /server:DADSPCJUNE2014 /database:Redgate_SqlDataCatalog  /project:$SQLDoc
 & ".\ScriptHelpers\index_to_readme.ps1" "$SQLDoc_Path"
 & ".\ScriptHelpers\md_to_html_link.ps1" "$SQLDoc_Path"
 & ".\ScriptHelpers\md_to_bullet_list.ps1" "$SQLDoc_Path"
-& ".\ScriptHelpers\object_to_readme.ps1" "$SQLDoc_Path"
+& ".\ScriptHelpers\object_to_readme.ps1" "$SQLDoc_Path"git
