@@ -53,5 +53,5 @@ Please bear in mind the following points on the descriptions
 * They have been produced by observing the [Redgate Data Catalog](https://www.red-gate.com/products/dba/sql-data-catalog/)
 * The descriptions have been used to demonstrate [Redgate SQLDoc](https://www.red-gate.com/products/sql-development/sql-doc/)
 
-The reason for attempting to document the [Redgate Data Catalog](https://www.red-gate.com/products/dba/sql-data-catalog/) is to allow the repository of the catalog to be used by Business Intelligence specialists to build reports reflecting the specific needs a business may have for the information held in a data cataloguue.
+The reason for attempting to document the [Redgate Data Catalog](https://www.red-gate.com/products/dba/sql-data-catalog/) is to allow the repository of the catalog to be used by Business Intelligence specialists to build reports reflecting the specific needs a business may have for the information held in a data catalogue.
 
